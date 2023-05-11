@@ -1,0 +1,260 @@
+1.
+git config --global user.name "Alberto Leon Luengo"
+git config --global user.email "a.leon.2020@alumnos.urjc.es"
+
+2.
+user.name=Alberto Leon Luengo
+user.email=a.leon.2020@alumnos.urjc.es
+core.editor=texteditor
+credential.helper=cache --timeout=3600
+
+3.
+mkdir receta
+cd receta
+git init
+
+4.
+En la rama master
+
+No hay commits todavía
+
+no hay nada para confirmar (crea/copia archivos y usa "git add" para hacerles seguimiento)
+
+5.
+En la rama master
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	ingredientes.txt
+	instrucciones.txt
+	
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+
+6.
+git add instrucciones.txt ingredientes.txt
+
+En la rama master
+
+No hay commits todavía
+
+Cambios a ser confirmados:
+  (usa "git rm --cached <archivo>..." para sacar del área de stage)
+	nuevos archivos: ingredientes.txt
+	nuevos archivos: instrucciones.txt  
+
+7.
+git commit -m "añadimos las instrucciones e ingredientes de la receta"
+
+[master (commit-raíz) 7fbac61] añadimos las instrucciones e ingredientes de la receta
+ 2 files changed, 10 insertions(+)
+ create mode 100644 ingredientes.txt
+ create mode 100644 instrucciones.txt
+
+8.
+-m <msg>, --message=<msg>
+    Use the given <msg> as the commit message. If multiple -m options are given, their values
+    are concatenated as separate paragraphs.
+
+    The -m option is mutually exclusive with -c, -C, and -F.
+
+9.
+nano ingredientes.txt (añadir 'media cebolla')
+nano instrucciones.txt (añadir 'Disfrútalo')
+git status
+
+En la rama master
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+	modificados:     ingredientes.txt
+	modificados:     instrucciones.txt
+	
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+
+10.
+El comando git commit sin la opción -m abre un editor de texto donde se solicita el mensaje del commit.
+Una vez se haya ingresado el mensaje, se guarda el archivo y se cierra el editor para crear el commit real.
+
+11.
+El comando git log muestra todos los commits realizados hasta el momento, así como su fecha, autor y mensaje.
+
+commit 52e4ee85f12e0414b4ee9906e892c8e395cf425c (HEAD -> master)
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:45:54 2023 +0200
+
+    añade Disfrútalo
+
+commit ae7f07864a7f25845b8132314b50d57122d6dd06
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:42:39 2023 +0200
+
+    añade media cebolla
+
+commit 7fbac617e6fc265ab6d86f51bff55e4231fa24ad
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:27:49 2023 +0200
+
+    añadimos las instrucciones e ingredientes de la receta
+
+El comando git status muestra la lista de cambios a ser commiteados.
+Si se ejecuta el comando git log con la opción --stat, muestra todas las modificaciones (tanto inserciones
+como eliminaciones) que se han producido en cada commit.
+
+12.
+git show 52e4ee85f12e0414b4ee9906e892c8e395cf425c
+
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:45:54 2023 +0200
+
+    añade Disfrútalo
+
+diff --git a/instrucciones.txt b/instrucciones.txt
+index b08c778..48cbb90 100644
+--- a/instrucciones.txt
++++ b/instrucciones.txt
+@@ -4,3 +4,4 @@ Trocea la cebolla
+ Exprime la lima
+ Añade sal
+ Mezcla los ingredientes
++Disfrútalo
+
+13.
+git diff ae7f07864a7f25845b8132314b50d57122d6dd06 52e4ee85f12e0414b4ee9906e892c8e395cf425c
+
+diff --git a/instrucciones.txt b/instrucciones.txt
+index b08c778..48cbb90 100644
+--- a/instrucciones.txt
++++ b/instrucciones.txt
+@@ -4,3 +4,4 @@ Trocea la cebolla
+ Exprime la lima
+ Añade sal
+ Mezcla los ingredientes
++Disfrútalo
+
+14.
+Para ver el histórico del repositorio se ejecuta git log --graph (error en el enunciado)
+
+* commit 52e4ee85f12e0414b4ee9906e892c8e395cf425c (HEAD -> master)
+| Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+| Date:   Thu Mar 30 09:45:54 2023 +0200
+| 
+|     añade Disfrútalo
+| 
+* commit ae7f07864a7f25845b8132314b50d57122d6dd06
+| Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+| Date:   Thu Mar 30 09:42:39 2023 +0200
+| 
+|     añade media cebolla
+| 
+* commit 7fbac617e6fc265ab6d86f51bff55e4231fa24ad
+  Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+  Date:   Thu Mar 30 09:27:49 2023 +0200
+  
+      añadimos las instrucciones e ingredientes de la receta
+
+15.
+* master (rama master)
+
+16.
+Creación de una nueva rama "experimento": git branch experimento
+Cambio a la nueva rama "experimento": git checkout experimento
+
+17.
+Al ejecutar nuevamente git branch, se observa lo siguiente:
+* experimento (nueva rama creada)
+  master
+
+El * indica la rama en la que nos encontramos actualmente.
+
+18.
+nano ingredientes.txt (añadir '2 cucharaditas de cilantro')
+git add ingredientes.txt
+git commit -m "Probemos con un poco de cilantro"
+
+19.
+nano ingredientes.txt (sustituir '2 cucharaditas de cilantro' por '1 cucharadita de cilantro')
+git add ingredientes.txt
+git commit -m "Mejor un poco menos de cilantro"
+
+20.
+El HEAD se encuentre en este momento al último commit realizado en la rama experimento.
+Hay 2 commits (icnluyendo el HEAD) por delante de master.
+
+commit a3e02feaf734d09c8e54d69a3842cf0089d3e772 (HEAD -> experimento)
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 10:25:42 2023 +0200
+
+    Mejor un poco menos de cilantro
+
+commit d44abd721d81a4f250886cc8e2893a84e52795b4
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 10:22:24 2023 +0200
+
+    Probemos con un poco de cilantro
+
+commit 52e4ee85f12e0414b4ee9906e892c8e395cf425c (master)
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:45:54 2023 +0200
+
+    añade Disfrútalo
+
+commit ae7f07864a7f25845b8132314b50d57122d6dd06
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:42:39 2023 +0200
+
+    añade media cebolla
+
+commit 7fbac617e6fc265ab6d86f51bff55e4231fa24ad
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:27:49 2023 +0200
+
+    añadimos las instrucciones e ingredientes de la receta
+
+21.
+git checkout master
+git branch bajo-sal
+git checkout bajo-sal
+
+22.
+nano ingredientes.txt (sustituir '2 cucharaditas de sal' por '1 cucharadita de sal')
+git add ingredientes.txt
+git commit -m "Una cucharadita menos de sal"
+
+23.
+El HEAD apunta al commit realizado en la rama bajo-sal.
+
+commit 980e827da45156f3bff43fd74348b051da82b80a (HEAD -> bajo-sal)
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 15:11:02 2023 +0200
+
+    Una cucharadita menos de sal
+
+commit 52e4ee85f12e0414b4ee9906e892c8e395cf425c (master)
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:45:54 2023 +0200
+
+    añade Disfrútalo
+
+commit ae7f07864a7f25845b8132314b50d57122d6dd06
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:42:39 2023 +0200
+
+    añade media cebolla
+
+commit 7fbac617e6fc265ab6d86f51bff55e4231fa24ad
+Author: Alberto Leon Luengo <a.leon.2020@alumnos.urjc.es>
+Date:   Thu Mar 30 09:27:49 2023 +0200
+
+    añadimos las instrucciones e ingredientes de la receta
+
+24.
+git checkout master
+nano README.md (añadir '# Receta de guacamole // Utilizada para aprender git')
+git add README.md
+git commit -m "Creación del README.md"
+
+25.
+Comprobar que se sigue la estructura propuesta en el enunciado
+usando el comando 'git log --graph --all' en cada una de las ramas.

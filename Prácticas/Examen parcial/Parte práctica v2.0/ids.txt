@@ -1,0 +1,10 @@
+John Smith 32 New_York 10001
+Mary Jones 45 Chicago 90001
+David Miller 27 Chicago 60601
+Emily Williams 31 Houston 77001
+Daniel Davis 38 Miami 33101
+Julia Martin 29 Miami 75201
+Robert Taylor 52 Philadelphia 19019
+Sarah Anderson 23 Chicago 85001
+Michael Brown 41 Atlanta 30301
+Samantha Lee 36 New_York 94101
