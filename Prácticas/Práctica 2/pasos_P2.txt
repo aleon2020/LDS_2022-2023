@@ -48,9 +48,9 @@ git push --tags
 Crear un nuevo repositorio vacío en GitLab (se sigue en el mismo directorio)
 git remote add ·upstream· <url_nuevorepositorio>
 git remote -v
-·git push origin master·
-git push ·upstream master·
-git push --tags ·upstream·
+git push origin master
+git push upstream master
+git push --tags upstream
 
 # Ejercicio 3
 Crear repositorio vacío en GitHub
