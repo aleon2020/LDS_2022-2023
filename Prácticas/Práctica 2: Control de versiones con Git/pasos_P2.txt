@@ -1,0 +1,72 @@
+# Ejercicio 1
+1.
+Crear repositorio en GitLab
+git clone <url_repositorio>
+echo "a.leon.2020" >> estudiante.txt
+git add estudiante.txt
+git commit -m "Archivo estudiante.txt"
+2.
+"Cambiar el nombre del archivo estudiante.txt a username.txt con git mv"
+echo "README ejercicio 1" >> README.md
+git add username.txt README.md
+git commit -m "Archivos username.txt y README.md"
+3.
+mkdir img/nachos.jpg
+echo "<url_receta>" >> nachos.recipe
+git add img/nachos.jpg nachos.recipe
+git commit -m "Archivos img/nachos.jpg y nachos.recipe"
+git tag -a v0.5 -m "v0.5"
+git push
+git push --tags
+
+# Ejercicio 2
+git checkout -b new-feature
+echo "Cocina de Git" >> kitchen.txt
+git add kitchen.txt
+git commit -m "Archivo kitchen.txt"
+git checkout main
+git merge new-feature
+echo "RECETAS!!!" >> recetas.md
+git add recetas.md
+git commit -m "Archivo recetas.md"
+git checkout -b falso-chef
+echo "COMIDA!!!" >> recetas.md
+git add recetas.md
+git commit -m "Archivo recetas.md (rama falso-chef)"
+git checkout main
+echo "AMAZING!!!" >> recetas.md
+git add recetas.md
+git commit -m "Archivo recetas.md (modificado)"
+git merge falso-chef ¡¡¡CONFLICTO!!!
+echo "COMIDA!!!" >> recetas.md
+git add recetas.md
+git commit -m "Archivo recetas.md (solución del conflicto)"
+git merge falso-chef
+git tag -a v1.0 -m "v1.0"
+git push
+git push --tags
+Crear un nuevo repositorio vacío en GitLab (se sigue en el mismo directorio)
+git remote add upstream <url_nuevorepositorio>
+git remote -v
+git push origin master
+git push upstream master
+git push --tags upstream
+
+# Ejercicio 3
+Crear repositorio vacío en GitHub
+mkdir <nombre_repositorio>
+git remote add <url_repositorioGitHub>
+echo "Repositorio en GitHub" >> README.md
+git add README.md
+git commit -m "Archivo README.md"
+echo "Script de Python" >> imprime_receta.py
+echo "COMIDA!!!" >> recetas.md
+git add imprime_receta.py recetas.md
+git commit -m "Archivo imprime_receta.py y recetas.md"
+git clone <url_fork>
+git checkout -b snoopy
+echo "4 personajes de Peanuts" >> characters.md
+git add characters.md
+git commit -m "Archivo characters.md"
+git push --set-upstream origin snoopy
+Hacer pull request y preparar una captura final del estado del repositorio

@@ -1,0 +1,26 @@
+git clone git@gitlab.etsit.urjc.es:egarciap/Madrid.git
+nano recomendaciones.txt
+Añadir "Llevar crema solar"
+git add recomendaciones.txt
+git commit -m "Nueva recomendación añadida"
+git checkout -b museos
+nano itinerario.txt
+Añadir "19:00 Visita al Museo del Prado"
+git add itinerario.txt
+git commit -m "Nuevo itinerario añadido"
+git checkout master
+nano itinerario.txt
+Añadir "21:00 Cenar en el McDonalds"
+git add itinerario.txt
+git commit -m "Nuevo itinerario añadido"
+git merge museos
+¡¡¡CONFLICTO!!!
+nano itinerario.txt
+Modificar "21:00 Cenar en el McDonalds" por "19:00 Visita al Museo del Prado"
+git add itinerario.txt
+git commit -m "Conflicto arreglado"
+git tag -a v1.0 -m "v1.0"
+git remote add git@gitlab.etsit.urjc.es:aalberto/visitamadrid.git
+git push origin master
+git push upstream master
+git push --tags upstream
