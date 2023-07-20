@@ -1,0 +1,7 @@
+s/ GA/, Galicia
+s/ PV/, País Vasco
+s/ MC/, Región de Murcia
+s/ CM/, Castilla-La Mancha
+s/ AN/, Andalucía
+s/ VC/, Comunidad Valenciana
+s/ MD/, Comunidad de Madrid

@@ -22,9 +22,11 @@ Directorio 'Ejercicios propuestos': Este directorio contiene todos los ejercicio
 
 Directorio 'Prácticas': Cada uno de estos directorios corresponde a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen código fuente y, en algunos casos, memorias en formato PDF que se han solicitado para mostrar datos, conclusiones, etc ...
 
-Directorios 'Examen X': Cada uno de estos 2 directorios contienen todo lo preguntado tanto en el examen parcial como en el examen final, desde las preguntas tipo test de la parte teórica hasta los scripts y problemas de Git propuestos en la parte práctica.
+Directorios 'Examen X': Cada uno de estos 3 directorios contienen todo lo preguntado tanto en el examen parcial, final, y en el de la convocatoria extraordinaria, desde las preguntas tipo test de la parte teórica hasta los scripts y problemas de Git propuestos en la parte práctica.
 
-Además, también se encuentran todos los enunciados correspondientes a cada parte en formato PDF.
+Además, también se encuentran todos los enunciados correspondientes a cada parte en formato PDF, y el directorio 'Material de apoyo', que contiene todos los materiales que los profesores proporcionan para realizar el examen práctico.
+
+NOTA: En el caso del examen práctico de la convocatoria extraordinaria solo se proporciona el enunciado, así que te invito a resolver este examen para practicar, y cuando hayas obtenido la solución a todos los ejercicios propuestos, escríbeme un issue en este repo y me encargaré de subir los archivos correspondientes. 
 
 ### 3.1 Compilación y ejecución
 
