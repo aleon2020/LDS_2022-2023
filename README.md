@@ -42,4 +42,4 @@ $ ./<script>.sh
 
 ## 4. Referencias
 
-Directorio 'Referencias': Se encuentra el libro que complementa a los contenidos vistos en las diapositivas de teoría (no se usa como material de estudio).
+Directorio ['Referencias'](https://github.com/aleon2020/LDS_2022-2023/tree/main/Referencias): Se encuentra el libro que complementa a los contenidos vistos en las diapositivas de teoría (no se usa como material de estudio).
