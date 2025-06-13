@@ -30,15 +30,11 @@ IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el 
 
 Directorio ['Diapositivas Teoría'](https://github.com/aleon2020/LDS_2022-2023/tree/main/Diapositivas%20Teor%C3%ADa): Dentro de este directorio se encuentran las diapositivas utilizadas en clase para abordar los contenidos teóricos de la asignatura.
 
-## 3. Ejercicios propuestos, prácticas y exámenes
+## 3. Ejercicios propuestos y prácticas
 
 Directorio ['Ejercicios propuestos'](https://github.com/aleon2020/LDS_2022-2023/tree/main/Ejercicios%20propuestos): Este directorio contiene todos los ejercicios no obligatorios que se han propuesto durante las clases para facilitar la comprensión de los contenidos vistos en teoría.
 
 Directorio ['Prácticas'](https://github.com/aleon2020/LDS_2022-2023/tree/main/Pr%C3%A1cticas): Cada uno de estos directorios corresponde a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen código fuente y, en algunos casos, memorias en formato PDF que se han solicitado para mostrar datos, conclusiones, etc ...
-
-Directorios 'Examen X': Cada uno de estos 3 directorios contienen todo lo preguntado tanto en el examen [parcial](https://github.com/aleon2020/LDS_2022-2023/tree/main/Examen%20parcial), [final](https://github.com/aleon2020/LDS_2022-2023/tree/main/Examen%20final), y en el de la [convocatoria extraordinaria](https://github.com/aleon2020/LDS_2022-2023/tree/main/Examen%20pr%C3%A1ctico%20extraordinaria), desde las preguntas tipo test de la parte teórica hasta los scripts y problemas de Git propuestos en la parte práctica.
-
-NOTA: En el caso del examen práctico de la convocatoria extraordinaria solo se proporciona el enunciado, así que te invito a resolver este examen para practicar, y cuando hayas obtenido la solución a todos los ejercicios propuestos, escríbeme un issue en este repo y me encargaré de subir los archivos correspondientes. 
 
 ### 3.1 Compilación y ejecución
 
