@@ -1,2 +1,0 @@
-SSH: git@gitlab.etsit.urjc.es:aalberto/visitamadrid.git
-HTTPS: https://gitlab.etsit.urjc.es/aalberto/visitamadrid.git
