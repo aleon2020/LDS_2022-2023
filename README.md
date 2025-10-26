@@ -1,6 +1,6 @@
 # Laboratorio de Sistemas 2022-2023
 
-Welcome! This repository contains all the materials for the subject Laboratorio de Sistemas.
+Welcome! This repository contains all the materials for the subject **Laboratorio de Sistemas**.
 
 Below is a brief description of all the content found in this repository, with the aim of facilitating preparation for the final exam and helping you tackle the subject as best as possible.
 
